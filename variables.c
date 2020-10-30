@@ -1,7 +1,7 @@
 /**
  * @file variables.c
  * @author lufer (lufer@ipca.pt)
- * @brief Manipulação de variaveis
+ * @brief Manipulação de variaveis e operadores
  * @version 0.1
  * @date 2020-10-29
  * @see https://www.tutorialspoint.com/cprogramming/c_variables.htm
@@ -22,16 +22,21 @@ int main () {
    int a, b;
    int c;
    float f;
+   int r;
  
    /* actual initialization */
    a = 10;
    b = 20;
   
    c = a + b;
-   printf("value of c : %d \n", c);
+   printf("%d + %d = %d \n", a,b,c);
 
    f = 70.0/3.0;
-   printf("value of f : %f \n", f);
+   printf("value of f : %4.3f \n", f);
+
+   r= 70.0/3.0;
+
+   printf("resto = %d \n", r);
  
    return 0;
 }

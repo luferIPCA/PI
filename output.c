@@ -1,5 +1,5 @@
 /**
- * @file printf.c
+ * @file output.c
  * @author lufer (lufer@ipca.pt)
  * @brief printf function
  * @version 0.1
@@ -20,5 +20,15 @@ int main()
    printf ("floats: %4.2f %+.0e %E \n", 3.1416, 3.1416, 3.1416);
    printf ("Width trick: %*d \n", 5, 10);
    printf ("%s \n", "A string");
+
+   //strings
+   puts("Uma string..");
+   printf("%s","Outra string...\n");
+
+   //characters
+   putchar(127);    
+   putchar(10);   //nl
+   putchar(65);
+   putchar(10);   //nl
    return 0;
 }

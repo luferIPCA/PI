@@ -1,7 +1,7 @@
 /**
  * @file limites2.c
  * @author lufer (lufer@ipca.pt)
- * @brief 
+ * @brief Float
  *
  * Manipulação de floats e doubles
  * 
@@ -18,6 +18,11 @@
 
 int main(int argc, char** argv) {
 
+    short a;
+    long b;
+    long long c;
+    long double d;
+    
     printf("Storage size for float : %d \n", sizeof(float));
     printf("FLT_MAX     :   %g\n", (float) FLT_MAX);
     printf("FLT_MIN     :   %g\n", (float) FLT_MIN);
@@ -27,5 +32,11 @@ int main(int argc, char** argv) {
     printf("DBL_MIN     :   %g\n", (double) DBL_MIN);
     printf("-DBL_MAX     :  %g\n", (double) -DBL_MAX);
     printf("Precision value: %d\n", FLT_DIG );
+
+
+    printf("size of short = %d bytes\n", sizeof(a));
+    printf("size of long = %d bytes\n", sizeof(b));
+    printf("size of long long = %d bytes\n", sizeof(c));
+    printf("size of long double= %d bytes\n", sizeof(d));
 
     return 0;
