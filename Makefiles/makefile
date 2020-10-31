@@ -1,6 +1,5 @@
 #makefile
-
-
-
-all: file1.c file2.c
-	gcc -o $@ file1.c file2.c -I.
+#by
+#date:
+all: file.c 
+	gcc -o all.exe file.c

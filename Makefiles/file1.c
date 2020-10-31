@@ -9,5 +9,5 @@
 void main()
 {
     printf("main() run!\n");
-    myfunc();
+    myFunc();
 }
