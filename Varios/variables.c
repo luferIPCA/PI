@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-// Variable declaration:
+// Variables declaration:
 extern int a, b;
 extern int c;
 extern float f;
