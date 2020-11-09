@@ -18,6 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="operadores.c" />
+    <ClCompile Include="partesPrograma.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{D1497B90-ED13-43D5-BB4C-C920B052048D}</ProjectGuid>
@@ -137,11 +141,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Aula 02-11-2020\operadores.c" />
-    <ClCompile Include="..\..\Varios\input.c" />
-    <ClCompile Include="..\..\Varios\output.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

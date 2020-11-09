@@ -16,6 +16,8 @@
  */
 #include <stdio.h>
 
+extern int soma(int x, int y);
+
 int main(){
 
     int x, y;
@@ -26,6 +28,9 @@ int main(){
     y=7;
     c=x*2;
     c='C';
+
+
+    x = soma(2,3);
 
     //><!===
 

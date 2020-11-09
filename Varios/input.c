@@ -10,6 +10,7 @@
  */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main ()
 {
@@ -41,5 +42,7 @@ int main ()
   printf("Nome: ");
   gets(nome);
   puts(nome);
+  
+  system("pause");
   return 0;
 }
