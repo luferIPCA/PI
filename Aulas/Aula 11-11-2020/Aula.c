@@ -7,6 +7,7 @@
  * Funções (I)
  * \author lufer
  * \date   November 2020
+ * \see http://www.cplusplus.com/
  *********************************************************************/
 
 #include <stdio.h>
@@ -14,6 +15,7 @@
 
 //Assinaturas das funções
 int somaValores(int valor1, int valor2);
+float divide(int x, int y);
 
 /**
  * .
@@ -31,12 +33,14 @@ int main()
     soma = somaValores(x, y);
 
     //apresentar resultados
-    printf("A soma de %d com %d = %d", x, y, soma);
+    printf("A soma de %d com %d = %d\n", x, y, soma);
+
+    printf(" %d / %d = %2.2f\n", x, y, divide(x, y));
 
 
-#pragma region switch
+#pragma region if-else-switch
     //Problema: Numero em extenso
-    //h1
+    //h1 - sem "else"
     int aux = 0;
     if (aux == 0) {
         puts("Zero");       //printf("%s",aux);
@@ -45,7 +49,7 @@ int main()
         puts("Um");
     }
 
-    //h2
+    //h2 - com "else"
     if (aux == 0) {
         puts("Zero");       //printf("%s",aux);
     }
@@ -56,7 +60,7 @@ int main()
             if (x == 2) 
                 puts("Dois");
 
-    //h3
+    //h3 - com switch
     switch (aux)
     {
     case 1: 
@@ -111,7 +115,6 @@ float divide(int x, int y) {
 
     //h2
     //return ((y != 0) ? (float)x / y : x);
-
 }
 
 #pragma endregion
