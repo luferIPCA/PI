@@ -8,7 +8,8 @@
  *********************************************************************/
 
 #include <stdio.h>
-#include <stdlib.h>                 //para usar o "system"
+#include <stdlib.h>                //para usar o "system"
+#include <conio.h>
 
 #pragma warning (disable: 4996)     //ignorar _CRT_SECURE_NO_WARNINGS
 
@@ -18,12 +19,12 @@
  * 
  * \return 
  */
-int main() {
+int main(void) {
 
     //variaveis
 
-    char nome[MAX];     //evitar usar valores na definição  
-    //char* nome="";    // necessario criar espaço em memoria com "malloc"
+    char nome[MAX];     //evitar usar valores na definiï¿½ï¿½o  
+    //char* nome="";    // necessario criar espaï¿½o em memoria com "malloc"
 
 #pragma region H1
 
@@ -32,7 +33,7 @@ int main() {
     //Experimentar com mais do que uma palavra
     scanf("%s", nome);
 
-    //Experimentar com várias palavras
+    //Experimentar com vï¿½rias palavras
     //scanf("%[^\n]s", nome);
 
     //Experimentar
@@ -102,4 +103,5 @@ int main() {
     //ou
     getch();
 
+    return (0);
 }

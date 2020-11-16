@@ -1,8 +1,8 @@
 /*****************************************************************//**
  * \file   IfElse.c
- * \brief  Instrução Condicional
+ * \brief  InstruÃ§Ãµes Condicionais
  * Algoritmos
- * Instrução Condicional: if..else
+ * InstruÃ§Ãµes Condicionais: if..else
  * \author lufer
  * \date   November 2020
  *********************************************************************/
@@ -26,7 +26,7 @@ int main1() {
 #pragma endregion
  
 #pragma region h2
-    //h2: Se x > y escreve "maior" senão escreve "Menor"
+    //h2: Se x > y escreve "maior" senï¿½o escreve "Menor"
 
     if (x > y)
     {
@@ -39,7 +39,7 @@ int main1() {
 #pragma endregion
 
 #pragma region h3
-    //h3: Se x > y escreve "maior" senão se for igual a y escreve "Igual" senão escreve "Menor"
+    //h3: Se x > y escreve "maior" senï¿½o se for igual a y escreve "Igual" senï¿½o escreve "Menor"
 
     if (x > y)
     {
@@ -55,8 +55,8 @@ int main1() {
 #pragma endregion
 
 #pragma region h4
-    //h4: verificar se x é par
-    // x é par se x%2 ==0
+    //h4: verificar se x ï¿½ par
+    // x ï¿½ par se x%2 ==0
 
     if (x%2==0)
     {
@@ -68,26 +68,26 @@ int main1() {
 #pragma endregion
 
 #pragma region h5
-    //h5: verificar se x é par e é múltiplo de 7
-    // x é par se x%2==0 e x é multiplo de 7 se x%7==0
+    //h5: verificar se x ï¿½ par e ï¿½ mï¿½ltiplo de 7
+    // x ï¿½ par se x%2==0 e x ï¿½ multiplo de 7 se x%7==0
 
     if ((x % 2 == 0) && (x % 7 == 0)) {
-        printf("É par e multiplo de 7\n");
+        printf("ï¿½ par e multiplo de 7\n");
     }
 #pragma endregion
 
 #pragma region h6
-    //h6: verificar se x é par e é múltiplo de y
-    // x é par se x%2==0 e x é multiplo de y se x%y==0
+    //h6: verificar se x ï¿½ par e ï¿½ mï¿½ltiplo de y
+    // x ï¿½ par se x%2==0 e x ï¿½ multiplo de y se x%y==0
 
     if ((x % 2 == 0) && (x % y == 0)) {
-        printf("É par e multiplo de y\n");
+        printf("ï¿½ par e multiplo de y\n");
     }
-    else {//não é par ou não é múltiplo de y
+    else {//nï¿½o ï¿½ par ou nï¿½o ï¿½ mï¿½ltiplo de y
         if (x % 2 != 0)
-            printf("X é múltiplo Y\n");
+            printf("X ï¿½ mï¿½ltiplo Y\n");
         else
-            printf("X É Par");
+            printf("X ï¿½ Par");
     }
 #pragma endregion
 

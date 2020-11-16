@@ -1,0 +1,8 @@
+
+C Library
+
+http://www.cplusplus.com/reference/
+
+https://www.tutorialspoint.com/c_standard_library/index.htm
+
+http://www.cplusplus.com/reference/
