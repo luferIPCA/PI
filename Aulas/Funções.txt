@@ -1,0 +1,29 @@
+
+//-----------------------------------------------------
+
+int dobro(int x);
+
+int soma(int x, int y, int z);
+
+boolean validaValor(int v, int x, int y);
+
+int calculaProduto(int x, int y);
+
+int contaPares(int lInf, int lSup);
+
+void mostraImpares(int i, int f);
+
+void mostraTudo(int i, int f);
+
+char* diaSemanaExtenso(diaSemana d);
+
+int calculaMaior(int x, int y);
+
+//-----------------------------------------------------
+
+Tipos de Dados
+
+Cores
+Dias da Semana
+Meses
+Clubes

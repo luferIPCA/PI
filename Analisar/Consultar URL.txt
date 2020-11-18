@@ -1,7 +1,8 @@
 
 C Library
+----------------------------------
 
-http://www.cplusplus.com/reference/
+https://www.c-lang.thiyagaraaj.com
 
 https://www.tutorialspoint.com/c_standard_library/index.htm
 
