@@ -16,9 +16,11 @@
  *********************************************************************/
 #include "Tipos.h"
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
+#pragma region ARRAYS
     //int notas[MAX];                   //declaração
     setlocale(LC_ALL, "en_US.utf8");    //mostrar caracteres portugueses
 
@@ -78,6 +80,19 @@ int main() {
     boolean aux = mostraArrayII(notas, MAX);
     printf("\n");
     int size = sizeof(notas) / sizeof(notas[0]);
-    printf("Tamanho do Array: %d", size);
-        
+    printf("Tamanho do Array: %d\n", size);
+    
+
+    int x = 2, y = 3;
+    x = incValor(x);
+    incValorII(&x);
+
+    //Uso de parâmetros variáveis
+    troca(x, y);
+    trocaII(&x,&y);
+    printf("%s\n",(existeValor(notas, MAX, 0)==true ? "Existe" : "Não Existe") );
+
+#pragma endregion
+
+
 }
