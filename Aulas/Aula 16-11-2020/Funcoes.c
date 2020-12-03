@@ -1,11 +1,7 @@
 /*****************************************************************//**
  * \file   Funcoes.c
  * \brief  
-<<<<<<< HEAD
  * Manipulação de Estruturas repetitivas (ciclos)
-=======
- * 
->>>>>>> b22e04dfa70bfde6cd06598fdf3625c1cc1c190e
  * \author lufer
  * \date   November 2020
  *********************************************************************/

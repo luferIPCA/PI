@@ -56,6 +56,26 @@ void ordenaArray(int a[], int size)
     }
 }
 
+int* ordenaArrayII(const int a[], int size)
+{
+    int i, j, temp;
+    int* aux = (int*)malloc(sizeof(int) * size);
+    aux = a;
+    for (i = 0; i < (size - 1); ++i)
+    {
+        for (j = 0; j < size - 1 - i; ++j)
+        {
+            if (aux[j] > aux[j + 1])
+            {
+                temp = aux[j + 1];
+                aux[j + 1] = aux[j];
+                aux[j] = temp;
+            }
+        }
+    }
+    return aux;
+}
+
 
 /**
  * Verifica se determinado valor existe.

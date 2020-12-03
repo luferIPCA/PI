@@ -23,6 +23,8 @@ void troca(int x, int y);
 boolean existeValor(int v[], int size, int valor);
 //int devolvePosicaoArray(int v[], int size, int valor);
 //boolean existeValorArray(int v[], int size, int valor);
-//void ordenaArray(int a[], int size);
+void ordenaArray(int a[], int size);
+int* ordenaArrayII(const int a[], int size);
+
 
 #endif

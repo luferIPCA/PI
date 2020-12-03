@@ -60,22 +60,26 @@ int main(void) {
 #pragma region ArrayII
     //Criar array como conjunto de apontadores para
     int* valores = (int*)malloc(sizeof(int) * 10);
+    iniciaArray(valores, MAX);
     //iniciaArray(valores, 10);
     valores[0] = -2;
     //*valores = -2;          //valores[0]
-    valores[1] = 12;
+    valores[1] = 20;
     //*(valores + 1) = 12;   //valores[1]
     valores[2] = 13;
-    valores[3] = 14;
+    valores[3] = 10;
     valores[9] = 137;
 
-    int n = 10;
+        int n = 10;
     mostraArray(valores, 10);
 
-    valores = getArrayPares(valores, 10);
-    valores = getArrayParesII(valores, 10);
+   /* valores = getArrayPares(valores, 10);
+    valores = getArrayParesII(valores, 10);*/
 
     mostraArray(valores, 10);
+
+    int soma = somaArray(valores, MAX);
+
     free(valores);
 #pragma endregion
 

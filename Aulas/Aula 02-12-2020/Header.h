@@ -12,6 +12,7 @@
 #pragma warning (disable: 4996)
 
 
+#pragma region AssinaturasStructs
 typedef enum {false, true}boolean;
 
 struct pessoa {
@@ -24,7 +25,9 @@ typedef struct pessoa pessoa;
 void mostraPessoas(pessoa p[], int size);
 pessoa existePessoa(pessoa p[], int size, char nome[]);
 
-#pragma region Assinaturas
+#pragma endregion
+
+#pragma region AssinaturasArrays
 
 int* getArrayPares(const int v[], int size);
 int* getArrayParesII(int* v, int size);
@@ -37,5 +40,6 @@ boolean existeChar(const char v1[], char ch);
 void inicializaArray(char n[], int size, char ch);
 boolean existeValor(int v[], int size, int valor);
 int ondeEstaChar(char v[], int size, char ch);
+int somaArray(int valores[], int size);
 
 #pragma endregion

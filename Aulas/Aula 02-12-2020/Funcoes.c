@@ -103,7 +103,7 @@ void mostraArray(const int v[], const int size) {
  */
 void iniciaArray(int v[], const int size) {
     for (int i = 0; i < size; i++) {
-        v[i] = NULL;
+        v[i] = 0;
     }
 }
 
@@ -142,4 +142,13 @@ pessoa existePessoa(pessoa p[], int size, char nome[]) {
 }
 
 #pragma endregion
+
+int somaArray(int valores[], int size) {
+    int soma = 0;
+    for (int i = 0; i < size; i++) {
+        if (valores[i] == 0) continue;
+        soma += valores[i];
+    }
+    return soma;
+}
 

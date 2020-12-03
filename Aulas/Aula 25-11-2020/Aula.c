@@ -92,6 +92,12 @@ int main() {
     trocaII(&x,&y);
     printf("%s\n",(existeValor(notas, MAX, 0)==true ? "Existe" : "Não Existe") );
 
+
+
+    //ordenaArray(notas, MAX);
+
+    int *res = ordenaArrayII(notas, MAX);
+
 #pragma endregion
 
 
