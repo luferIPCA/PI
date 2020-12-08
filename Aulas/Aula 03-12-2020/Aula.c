@@ -40,7 +40,8 @@ void ordernarArray(int v[], int n) {
  */
 int maiorValor(int v[], int n) {
     int m = v[0];
-    for (int i = 1; i < n; i++)
+
+    for (int i = 1; i < n; i++) 
     {
         if (m < v[i]) m = v[i];
     }
@@ -68,6 +69,7 @@ typedef struct MaiorMenor {
     int maior;
     int menor;
 }MaiorMenor;
+
 
 /**
  * Encontra o maior e menor valor de um array.
@@ -143,14 +145,78 @@ Aluno maisVelho(Aluno turma[], int n) {
 }
 
 
+boolean insereAluno(Aluno turma[], int n, Aluno novo) {
+    int i = 0;
+    while (strcmp(turma[i].nome, novo.nome) < 0) i++;
 
+}
+
+/**
+ * Coloca valor inicial em todas as posições de um array.
+ *
+ * \param v
+ * \param size
+ */
+void iniciaArray(int v[], const int size) {
+    for (int i = 0; i < size; i++) {
+        v[i] = 0;
+    }
+}
+
+boolean insereValorArray(int valores[], int n, int novo) {
+    int i = 0,j;
+    while (valores[i] < novo) {
+        i++;
+    }
+    j = n-1;
+    while (j > i) {
+        valores[j] = valores[j-1];
+        j--;
+    }
+    valores[i] = novo;
+}
+
+/**
+ * Inserir valor em array ordenado
+ * 
+ * \param v
+ * \param size
+ * \param valorNovo
+ * \return 
+ */
+boolean insereValor(int v[], int size, int valorNovo) {
+    int i = 0,j;
+    //encontra a posição onde inserir valor novo
+    while (v[i] < valorNovo)
+        i++;
+    //desloca "todos" para a direita
+    j = size - 1;
+    while (j > i) {
+        v[j] = v[j - 1];
+        j--;
+    }
+    v[i] = valorNovo;
+    return true;
+}
+
+
+void mostraArray(int v[], int s) {
+    for (int i = 0; i < s; i++) {
+        printf("%d\n", v[i]);
+    }
+}
 
 int main() {
 
-    int valores[] = { 12,-4,12,7 };
+    int valores[6] = { 1,3,5,8,12 };
+    
+    mostraArray(valores, 6);
+
+    //ordernarArray(valores, 5);
+    insereValor(valores, 6, -7);
+    insereValorArray(valores, 6, 2);
 
     Aluno alunos[MAXALUNOS] = { {23,"Ana"},{24,"Pedro"},{18,"Paula"} };
-
 
     alunos[3].idade = 20;
     strcpy(alunos[3].nome,"Joaquim");

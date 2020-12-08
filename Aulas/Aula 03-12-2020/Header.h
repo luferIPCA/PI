@@ -15,4 +15,6 @@ typedef struct Aluno {
 	char nome[TAMNOME];
 }Aluno;
 
+typedef enum {false, true} boolean;
+
 #endif
