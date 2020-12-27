@@ -35,5 +35,12 @@ int main() {
     puts("Array Ordeenado:\n");
     mostraArrayAlunos(alunos, 5);
 
+    int size = 5;
+
+    size = removeAluno(alunos, size, "ana");
+
+    mostraArrayAlunos(alunos, size);
+
+    size = removeAluno(alunos, size, "pedro");
 
 }

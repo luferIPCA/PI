@@ -41,6 +41,7 @@ Aluno maisVelho(Aluno turma[], int n);
 Aluno maisNovo(Aluno turma[], int n);
 void mostraArrayAlunos(Aluno v[], int n);
 void ordernarArrayAlunos(Aluno v[], int n);
+int removeAluno(Aluno turma[], int n, char nome[]);
 
 #pragma endregion
 

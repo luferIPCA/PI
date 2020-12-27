@@ -30,7 +30,7 @@ void ordernarArray(int v[], int n) {
  * \return
  */
 int maiorValor(int v[], int n) {
-    int m = v[0];
+    int m = v[0];       //inicio maior=1ª posição do array
 
     for (int i = 1; i < n; i++)
     {
@@ -85,15 +85,17 @@ void iniciaArrayZero(int v[], const int size) {
 
 /**
  * Inserir valor em array ordenado
- *
+ *  REVEREM!!!!
  * \param v
  * \param size
  * \param valorNovo
  * \return
  */
-boolean insereValorArray(int v[], int size, int valorNovo) {
+int insereValorArray(int v[], int size, int valorNovo) {
     int i = 0, j;
     //encontra a posição onde inserir valor novo
+    if (size == MAXALUNOS) return -1;
+
     while (v[i] < valorNovo)
         i++;
     //desloca "todos" para a direita
@@ -103,7 +105,8 @@ boolean insereValorArray(int v[], int size, int valorNovo) {
         j--;
     }
     v[i] = valorNovo;
-    return true;
+    size++;
+    return size;
 }
 
 /**
@@ -166,6 +169,19 @@ Aluno maisNovo(Aluno turma[], int n) {
     return (turma[0]);      //aluno mais novo encontra-se na posição 0 do array, após a ordenação!!!
 }
 
+
+Aluno maisNovoII(Aluno turma[], int n) {
+    Aluno novo = turma[0];
+    for (int i = 1; i < n; i++) {
+        if (turma[i].idade < novo.idade) {
+            novo = turma[i];
+        }
+    }
+    return novo;
+}
+
+
+
 /**
  * Encontra o aluno mais velho!
  *
@@ -180,7 +196,7 @@ Aluno maisVelho(Aluno turma[], int n) {
 
 /**
  * Insere um novo aluno num array ordenado
- *
+ * COMPLETAREM!!!
  * \param turma
  * \param n
  * \param novo
@@ -188,8 +204,31 @@ Aluno maisVelho(Aluno turma[], int n) {
  */
 boolean insereAluno(Aluno turma[], int n, Aluno novo) {
     int i = 0;
+    if (n == MAXALUNOS) return false;
     while (strcmp(turma[i].nome, novo.nome) < 0) i++;
     //Completar
+}
+
+/**
+ * .
+ * 
+ * \param turma
+ * \param n
+ * \param nome
+ * \return 
+ */
+int removeAluno(Aluno turma[], int n, char nome[]) {
+    int i = 0;
+    while (i < n && ((strcmp(turma[i].nome, nome) != 0))) i++;
+    if (i == n) 
+        return -1;
+    int j = i + 1;
+    while (j < n) {
+        turma[i] = turma[j];
+        i++; j++;
+    }
+    n--;
+    return n;
 }
 
 #pragma endregion
