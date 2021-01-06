@@ -45,7 +45,7 @@ int main1() {
 	// dados de entrada
 	//fIn = fopen("c:\\temp\\frases.txt", "r"); // abrir frases.txt em modo leitura
 	//se houve algum problema...
-	fIn = fopen("frases.txt", "r");
+	fIn = fopen("frases1.txt", "r");
 	if (fIn == NULL){
 		perror("Erro ao abrir o ficheiro\n");
 		getche();

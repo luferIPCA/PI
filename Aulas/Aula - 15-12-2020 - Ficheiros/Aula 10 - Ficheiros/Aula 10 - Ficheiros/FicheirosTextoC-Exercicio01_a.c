@@ -6,11 +6,14 @@
 	             com o prefixo do número de cada linha
 */
 #include <stdio.h>
+#include <conio.h>
  
+
+#pragma warning(disable:4996)
 // declaração ou assinatura das funções locais
 
 // função principal
-int main2() {
+int main4() {
 	// declaração e inicialização de variáveis
 
     FILE *af; // apontador para descritor de ficheiro

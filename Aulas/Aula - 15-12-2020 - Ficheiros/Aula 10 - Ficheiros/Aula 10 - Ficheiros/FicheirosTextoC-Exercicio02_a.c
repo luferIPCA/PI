@@ -5,6 +5,8 @@
 	Description:   programa para permitir registar novas inscrições (nome)
                     no ficheiro de texto "inscrições.txt", e listar as inscrições atuais.
                     fprintf, fgets
+
+                    Trabalhar coom structs
 */ 
 #include <stdio.h>
 #include <string.h>
@@ -20,7 +22,7 @@ void listarInscricoes(char *nomeFicheiro) ;
 
 
 // função principal
-int main3() {
+int main2() {
     setlocale(LC_ALL, "Portuguese");
 	// declaração e inicialização de variáveis
 	char op;
